@@ -36,13 +36,27 @@ export default function Slideshow({
     };
   }, [emblaApi, onSelect]);
 
-  const scrollPrev = useCallback(() => {
-    if (emblaApi) emblaApi.scrollPrev();
+  const resetAutoplay = useCallback(() => {
+    if (!emblaApi) return;
+    const autoplayPlugin = emblaApi.plugins()?.autoplay;
+    if (autoplayPlugin) {
+      autoplayPlugin.reset();
+    }
   }, [emblaApi]);
 
+  const scrollPrev = useCallback(() => {
+    if (emblaApi) {
+      emblaApi.scrollPrev();
+      resetAutoplay();
+    }
+  }, [emblaApi, resetAutoplay]);
+
   const scrollNext = useCallback(() => {
-    if (emblaApi) emblaApi.scrollNext();
-  }, [emblaApi]);
+    if (emblaApi) {
+      emblaApi.scrollNext();
+      resetAutoplay();
+    }
+  }, [emblaApi, resetAutoplay]);
 
   const scrollTo = useCallback(
     (index: number) => {
@@ -60,12 +74,12 @@ export default function Slideshow({
           {photos.map((photo, i) => (
             <div
               key={i}
-              className="flex-[0_0_100%] min-w-0 relative aspect-[16/9]"
+              className="flex-[0_0_100%] min-w-0 relative aspect-[16/9] bg-black"
             >
               <img
                 src={photo.src}
                 alt={photo.label || `Pizza party photo ${i + 1}`}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
                 loading={i === 0 ? "eager" : "lazy"}
               />
               {photo.label && (
