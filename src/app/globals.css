@@ -1,26 +1,69 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --pizza-yellow: #FFE135;
+  --pizza-red: #E85D5D;
+  --earth-blue: #7DD3E8;
+  --bg-dark: #0a0a0a;
+  --bg-card: #151515;
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0a0;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-pizza-yellow: var(--pizza-yellow);
+  --color-pizza-red: var(--pizza-red);
+  --color-earth-blue: var(--earth-blue);
+  --color-bg-dark: var(--bg-dark);
+  --color-bg-card: var(--bg-card);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --font-sans: var(--font-rubik);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg-dark);
+  color: var(--text-primary);
+  font-family: var(--font-rubik), Arial, Helvetica, sans-serif;
+}
+
+/* Leaflet overrides for dark theme */
+.leaflet-container {
+  background: #1a1a2e !important;
+  border-radius: 12px;
+}
+
+.leaflet-popup-content-wrapper {
+  background: #151515 !important;
+  color: #ffffff !important;
+  border-radius: 12px !important;
+  border: 1px solid #FFE135 !important;
+}
+
+.leaflet-popup-tip {
+  background: #151515 !important;
+}
+
+.leaflet-popup-close-button {
+  color: #a0a0a0 !important;
+}
+
+.leaflet-control-zoom a {
+  background: #151515 !important;
+  color: #ffffff !important;
+  border-color: #333 !important;
+}
+
+.leaflet-control-attribution {
+  background: rgba(0, 0, 0, 0.6) !important;
+  color: #666 !important;
+}
+
+.leaflet-control-attribution a {
+  color: #888 !important;
+}
+
+/* Dark map tiles filter */
+.leaflet-tile-pane {
+  filter: invert(1) hue-rotate(180deg) brightness(0.8) contrast(1.2) saturate(0.3);
 }
