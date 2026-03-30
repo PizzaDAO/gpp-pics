@@ -24,12 +24,11 @@ interface City {
 }
 
 // Custom pizza pin icon
-const pizzaIcon = new L.DivIcon({
-  html: `<div style="font-size: 28px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5)); cursor: pointer;">&#127829;</div>`,
-  className: "pizza-marker",
-  iconSize: [32, 32],
-  iconAnchor: [16, 16],
-  popupAnchor: [0, -20],
+const pizzaIcon = new L.Icon({
+  iconUrl: "/pin.png",
+  iconSize: [48, 48],
+  iconAnchor: [24, 48],
+  popupAnchor: [0, -48],
 });
 
 function FitBounds({ cities }: { cities: City[] }) {
