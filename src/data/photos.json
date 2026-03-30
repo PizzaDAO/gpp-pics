@@ -15,7 +15,7 @@
           ]
         }
       ],
-      "flag": "🇮🇳"
+      "countryCode": "in"
     },
     {
       "slug": "aklan",
@@ -32,7 +32,7 @@
           ]
         }
       ],
-      "flag": "🇵🇭"
+      "countryCode": "ph"
     },
     {
       "slug": "akure",
@@ -49,7 +49,7 @@
           ]
         }
       ],
-      "flag": "🇳🇬"
+      "countryCode": "ng"
     },
     {
       "slug": "arusha",
@@ -66,7 +66,7 @@
           ]
         }
       ],
-      "flag": "🇹🇿"
+      "countryCode": "tz"
     },
     {
       "slug": "astana",
@@ -83,7 +83,7 @@
           ]
         }
       ],
-      "flag": "🇰🇿"
+      "countryCode": "kz"
     },
     {
       "slug": "athens",
@@ -103,7 +103,7 @@
           ]
         }
       ],
-      "flag": "🇬🇷"
+      "countryCode": "gr"
     },
     {
       "slug": "atlanta",
@@ -120,7 +120,7 @@
           ]
         }
       ],
-      "flag": "🇺🇸"
+      "countryCode": "us"
     },
     {
       "slug": "atlantic-city",
@@ -140,7 +140,7 @@
           ]
         }
       ],
-      "flag": "🇺🇸"
+      "countryCode": "us"
     },
     {
       "slug": "bangalore",
@@ -157,7 +157,7 @@
           ]
         }
       ],
-      "flag": "🇮🇳"
+      "countryCode": "in"
     },
     {
       "slug": "bangkok",
@@ -177,7 +177,7 @@
           ]
         }
       ],
-      "flag": "🇹🇭"
+      "countryCode": "th"
     },
     {
       "slug": "beijing",
@@ -197,7 +197,7 @@
           ]
         }
       ],
-      "flag": "🇨🇳"
+      "countryCode": "cn"
     },
     {
       "slug": "beirut",
@@ -214,7 +214,7 @@
           ]
         }
       ],
-      "flag": "🇱🇧"
+      "countryCode": "lb"
     },
     {
       "slug": "benin-city",
@@ -234,7 +234,7 @@
           ]
         }
       ],
-      "flag": "🇳🇬"
+      "countryCode": "ng"
     },
     {
       "slug": "benue-state",
@@ -251,7 +251,7 @@
           ]
         }
       ],
-      "flag": "🇳🇬"
+      "countryCode": "ng"
     },
     {
       "slug": "bordeaux",
@@ -268,7 +268,7 @@
           ]
         }
       ],
-      "flag": "🇫🇷"
+      "countryCode": "fr"
     },
     {
       "slug": "boston",
@@ -285,7 +285,7 @@
           ]
         }
       ],
-      "flag": "🇺🇸"
+      "countryCode": "us"
     },
     {
       "slug": "brisbane",
@@ -302,7 +302,7 @@
           ]
         }
       ],
-      "flag": "🇦🇺"
+      "countryCode": "au"
     },
     {
       "slug": "brno",
@@ -319,7 +319,7 @@
           ]
         }
       ],
-      "flag": "🇨🇿"
+      "countryCode": "cz"
     },
     {
       "slug": "brussels",
@@ -339,7 +339,7 @@
           ]
         }
       ],
-      "flag": "🇧🇪"
+      "countryCode": "be"
     },
     {
       "slug": "bucharest",
@@ -356,7 +356,7 @@
           ]
         }
       ],
-      "flag": "🇷🇴"
+      "countryCode": "ro"
     },
     {
       "slug": "buenos-aires",
@@ -376,7 +376,7 @@
           ]
         }
       ],
-      "flag": "🇦🇷"
+      "countryCode": "ar"
     },
     {
       "slug": "buffalo",
@@ -396,7 +396,7 @@
           ]
         }
       ],
-      "flag": "🇺🇸"
+      "countryCode": "us"
     },
     {
       "slug": "bulawayo",
@@ -416,7 +416,7 @@
           ]
         }
       ],
-      "flag": "🇿🇼"
+      "countryCode": "zw"
     },
     {
       "slug": "buzios",
@@ -433,7 +433,7 @@
           ]
         }
       ],
-      "flag": "🇧🇷"
+      "countryCode": "br"
     },
     {
       "slug": "cairo",
@@ -450,7 +450,7 @@
           ]
         }
       ],
-      "flag": "🇪🇬"
+      "countryCode": "eg"
     },
     {
       "slug": "calabar",
@@ -470,7 +470,7 @@
           ]
         }
       ],
-      "flag": "🇳🇬"
+      "countryCode": "ng"
     },
     {
       "slug": "calgary",
@@ -487,7 +487,7 @@
           ]
         }
       ],
-      "flag": "🇨🇦"
+      "countryCode": "ca"
     },
     {
       "slug": "cali",
@@ -507,7 +507,7 @@
           ]
         }
       ],
-      "flag": "🇨🇴"
+      "countryCode": "co"
     },
     {
       "slug": "campinas",
@@ -527,7 +527,7 @@
           ]
         }
       ],
-      "flag": "🇧🇷"
+      "countryCode": "br"
     },
     {
       "slug": "caracas",
@@ -547,7 +547,7 @@
           ]
         }
       ],
-      "flag": "🇻🇪"
+      "countryCode": "ve"
     },
     {
       "slug": "casablanca",
@@ -564,7 +564,7 @@
           ]
         }
       ],
-      "flag": "🇲🇦"
+      "countryCode": "ma"
     },
     {
       "slug": "catania",
@@ -584,7 +584,7 @@
           ]
         }
       ],
-      "flag": "🇮🇹"
+      "countryCode": "it"
     },
     {
       "slug": "cayman-islands",
@@ -604,7 +604,7 @@
           ]
         }
       ],
-      "flag": "🇰🇾"
+      "countryCode": "ky"
     },
     {
       "slug": "chengdu",
@@ -621,7 +621,7 @@
           ]
         }
       ],
-      "flag": "🇨🇳"
+      "countryCode": "cn"
     },
     {
       "slug": "chennai",
@@ -638,7 +638,7 @@
           ]
         }
       ],
-      "flag": "🇮🇳"
+      "countryCode": "in"
     },
     {
       "slug": "chiang-mai",
@@ -655,7 +655,7 @@
           ]
         }
       ],
-      "flag": "🇹🇭"
+      "countryCode": "th"
     },
     {
       "slug": "cleveland",
@@ -675,7 +675,7 @@
           ]
         }
       ],
-      "flag": "🇺🇸"
+      "countryCode": "us"
     },
     {
       "slug": "cochabamba",
@@ -698,7 +698,7 @@
           ]
         }
       ],
-      "flag": "🇧🇴"
+      "countryCode": "bo"
     },
     {
       "slug": "colombo",
@@ -733,7 +733,7 @@
           ]
         }
       ],
-      "flag": "🇱🇰"
+      "countryCode": "lk"
     },
     {
       "slug": "copenhagen",
@@ -753,7 +753,7 @@
           ]
         }
       ],
-      "flag": "🇩🇰"
+      "countryCode": "dk"
     },
     {
       "slug": "coyhaique",
@@ -770,7 +770,7 @@
           ]
         }
       ],
-      "flag": "🇨🇱"
+      "countryCode": "cl"
     },
     {
       "slug": "cuenca",
@@ -787,7 +787,7 @@
           ]
         }
       ],
-      "flag": "🇪🇨"
+      "countryCode": "ec"
     },
     {
       "slug": "culiacan",
@@ -807,7 +807,7 @@
           ]
         }
       ],
-      "flag": "🇲🇽"
+      "countryCode": "mx"
     },
     {
       "slug": "curitiba",
@@ -827,7 +827,7 @@
           ]
         }
       ],
-      "flag": "🇧🇷"
+      "countryCode": "br"
     },
     {
       "slug": "da-nang",
@@ -844,7 +844,7 @@
           ]
         }
       ],
-      "flag": "🇻🇳"
+      "countryCode": "vn"
     },
     {
       "slug": "dallas",
@@ -861,7 +861,7 @@
           ]
         }
       ],
-      "flag": "🇺🇸"
+      "countryCode": "us"
     },
     {
       "slug": "denver",
@@ -878,7 +878,7 @@
           ]
         }
       ],
-      "flag": "🇺🇸"
+      "countryCode": "us"
     },
     {
       "slug": "dubai",
@@ -895,7 +895,7 @@
           ]
         }
       ],
-      "flag": "🇦🇪"
+      "countryCode": "ae"
     },
     {
       "slug": "dublin",
@@ -921,7 +921,7 @@
           ]
         }
       ],
-      "flag": "🇮🇪"
+      "countryCode": "ie"
     },
     {
       "slug": "durham",
@@ -938,7 +938,7 @@
           ]
         }
       ],
-      "flag": "🇺🇸"
+      "countryCode": "us"
     },
     {
       "slug": "edmonton",
@@ -955,7 +955,7 @@
           ]
         }
       ],
-      "flag": "🇨🇦"
+      "countryCode": "ca"
     },
     {
       "slug": "el-hatillo",
@@ -975,7 +975,7 @@
           ]
         }
       ],
-      "flag": "🇻🇪"
+      "countryCode": "ve"
     },
     {
       "slug": "el-salvador",
@@ -995,7 +995,7 @@
           ]
         }
       ],
-      "flag": "🇸🇻"
+      "countryCode": "sv"
     },
     {
       "slug": "entebbe",
@@ -1015,7 +1015,7 @@
           ]
         }
       ],
-      "flag": "🇺🇬"
+      "countryCode": "ug"
     },
     {
       "slug": "entre-rios",
@@ -1032,7 +1032,7 @@
           ]
         }
       ],
-      "flag": "🇦🇷"
+      "countryCode": "ar"
     },
     {
       "slug": "enugu",
@@ -1052,7 +1052,7 @@
           ]
         }
       ],
-      "flag": "🇳🇬"
+      "countryCode": "ng"
     },
     {
       "slug": "florence",
@@ -1075,7 +1075,7 @@
           ]
         }
       ],
-      "flag": "🇮🇹"
+      "countryCode": "it"
     },
     {
       "slug": "florianopolis",
@@ -1092,7 +1092,7 @@
           ]
         }
       ],
-      "flag": "🇧🇷"
+      "countryCode": "br"
     },
     {
       "slug": "fort-lauderdale",
@@ -1112,7 +1112,7 @@
           ]
         }
       ],
-      "flag": "🇺🇸"
+      "countryCode": "us"
     },
     {
       "slug": "fortaleza",
@@ -1132,7 +1132,7 @@
           ]
         }
       ],
-      "flag": "🇧🇷"
+      "countryCode": "br"
     },
     {
       "slug": "gaborone",
@@ -1152,7 +1152,7 @@
           ]
         }
       ],
-      "flag": "🇧🇼"
+      "countryCode": "bw"
     },
     {
       "slug": "galle",
@@ -1172,7 +1172,7 @@
           ]
         }
       ],
-      "flag": "🇱🇰"
+      "countryCode": "lk"
     },
     {
       "slug": "gothenburg",
@@ -1189,7 +1189,7 @@
           ]
         }
       ],
-      "flag": "🇸🇪"
+      "countryCode": "se"
     },
     {
       "slug": "gran-canaria",
@@ -1206,7 +1206,7 @@
           ]
         }
       ],
-      "flag": "🇪🇸"
+      "countryCode": "es"
     },
     {
       "slug": "guadalajara",
@@ -1226,7 +1226,7 @@
           ]
         }
       ],
-      "flag": "🇲🇽"
+      "countryCode": "mx"
     },
     {
       "slug": "guangzhou",
@@ -1249,7 +1249,7 @@
           ]
         }
       ],
-      "flag": "🇨🇳"
+      "countryCode": "cn"
     },
     {
       "slug": "guatemala-city",
@@ -1269,7 +1269,7 @@
           ]
         }
       ],
-      "flag": "🇬🇹"
+      "countryCode": "gt"
     },
     {
       "slug": "guayaquil",
@@ -1286,7 +1286,7 @@
           ]
         }
       ],
-      "flag": "🇪🇨"
+      "countryCode": "ec"
     },
     {
       "slug": "guaynabo",
@@ -1306,7 +1306,7 @@
           ]
         }
       ],
-      "flag": "🇵🇷"
+      "countryCode": "pr"
     },
     {
       "slug": "haifa",
@@ -1323,7 +1323,7 @@
           ]
         }
       ],
-      "flag": "🇮🇱"
+      "countryCode": "il"
     },
     {
       "slug": "hangzhou",
@@ -1346,7 +1346,7 @@
           ]
         }
       ],
-      "flag": "🇨🇳"
+      "countryCode": "cn"
     },
     {
       "slug": "hanoi",
@@ -1366,7 +1366,7 @@
           ]
         }
       ],
-      "flag": "🇻🇳"
+      "countryCode": "vn"
     },
     {
       "slug": "ho-chi-minh-city",
@@ -1383,7 +1383,7 @@
           ]
         }
       ],
-      "flag": "🇻🇳"
+      "countryCode": "vn"
     },
     {
       "slug": "houston",
@@ -1403,7 +1403,7 @@
           ]
         }
       ],
-      "flag": "🇺🇸"
+      "countryCode": "us"
     },
     {
       "slug": "hue",
@@ -1429,7 +1429,7 @@
           ]
         }
       ],
-      "flag": "🇻🇳"
+      "countryCode": "vn"
     },
     {
       "slug": "hyderabad",
@@ -1446,7 +1446,7 @@
           ]
         }
       ],
-      "flag": "🇮🇳"
+      "countryCode": "in"
     },
     {
       "slug": "ijoko",
@@ -1466,7 +1466,7 @@
           ]
         }
       ],
-      "flag": "🇳🇬"
+      "countryCode": "ng"
     },
     {
       "slug": "indianapolis",
@@ -1483,7 +1483,7 @@
           ]
         }
       ],
-      "flag": "🇺🇸"
+      "countryCode": "us"
     },
     {
       "slug": "isla-margarita",
@@ -1503,7 +1503,7 @@
           ]
         }
       ],
-      "flag": "🇻🇪"
+      "countryCode": "ve"
     },
     {
       "slug": "islamabad",
@@ -1526,7 +1526,7 @@
           ]
         }
       ],
-      "flag": "🇵🇰"
+      "countryCode": "pk"
     },
     {
       "slug": "jacksonville",
@@ -1546,7 +1546,7 @@
           ]
         }
       ],
-      "flag": "🇺🇸"
+      "countryCode": "us"
     },
     {
       "slug": "jakarta",
@@ -1563,7 +1563,7 @@
           ]
         }
       ],
-      "flag": "🇮🇩"
+      "countryCode": "id"
     },
     {
       "slug": "kandy",
@@ -1580,7 +1580,7 @@
           ]
         }
       ],
-      "flag": "🇱🇰"
+      "countryCode": "lk"
     },
     {
       "slug": "kyiv",
@@ -1597,7 +1597,7 @@
           ]
         }
       ],
-      "flag": "🇺🇦"
+      "countryCode": "ua"
     },
     {
       "slug": "lecheria",
@@ -1617,7 +1617,7 @@
           ]
         }
       ],
-      "flag": "🇻🇪"
+      "countryCode": "ve"
     },
     {
       "slug": "lisbon",
@@ -1640,7 +1640,7 @@
           ]
         }
       ],
-      "flag": "🇵🇹"
+      "countryCode": "pt"
     },
     {
       "slug": "maracaibo",
@@ -1660,7 +1660,7 @@
           ]
         }
       ],
-      "flag": "🇻🇪"
+      "countryCode": "ve"
     },
     {
       "slug": "maturin",
@@ -1677,7 +1677,7 @@
           ]
         }
       ],
-      "flag": "🇻🇪"
+      "countryCode": "ve"
     },
     {
       "slug": "medellin",
@@ -1697,7 +1697,7 @@
           ]
         }
       ],
-      "flag": "🇨🇴"
+      "countryCode": "co"
     },
     {
       "slug": "melbourne",
@@ -1714,7 +1714,7 @@
           ]
         }
       ],
-      "flag": "🇦🇺"
+      "countryCode": "au"
     },
     {
       "slug": "mendoza",
@@ -1731,7 +1731,7 @@
           ]
         }
       ],
-      "flag": "🇦🇷"
+      "countryCode": "ar"
     },
     {
       "slug": "merida",
@@ -1748,7 +1748,7 @@
           ]
         }
       ],
-      "flag": "🇲🇽"
+      "countryCode": "mx"
     },
     {
       "slug": "monterrey",
@@ -1768,7 +1768,7 @@
           ]
         }
       ],
-      "flag": "🇲🇽"
+      "countryCode": "mx"
     },
     {
       "slug": "mumbai",
@@ -1788,7 +1788,7 @@
           ]
         }
       ],
-      "flag": "🇮🇳"
+      "countryCode": "in"
     },
     {
       "slug": "natal",
@@ -1808,7 +1808,7 @@
           ]
         }
       ],
-      "flag": "🇧🇷"
+      "countryCode": "br"
     },
     {
       "slug": "ojeda",
@@ -1825,7 +1825,7 @@
           ]
         }
       ],
-      "flag": "🇻🇪"
+      "countryCode": "ve"
     },
     {
       "slug": "portoviejo",
@@ -1845,7 +1845,7 @@
           ]
         }
       ],
-      "flag": "🇪🇨"
+      "countryCode": "ec"
     },
     {
       "slug": "prague",
@@ -1862,7 +1862,7 @@
           ]
         }
       ],
-      "flag": "🇨🇿"
+      "countryCode": "cz"
     },
     {
       "slug": "prayagraj",
@@ -1879,7 +1879,7 @@
           ]
         }
       ],
-      "flag": "🇮🇳"
+      "countryCode": "in"
     },
     {
       "slug": "puebla",
@@ -1899,7 +1899,7 @@
           ]
         }
       ],
-      "flag": "🇲🇽"
+      "countryCode": "mx"
     },
     {
       "slug": "quetzaltenango",
@@ -1919,7 +1919,7 @@
           ]
         }
       ],
-      "flag": "🇬🇹"
+      "countryCode": "gt"
     },
     {
       "slug": "salama",
@@ -1942,7 +1942,7 @@
           ]
         }
       ],
-      "flag": "🇬🇹"
+      "countryCode": "gt"
     },
     {
       "slug": "salvador-bahia",
@@ -1959,7 +1959,7 @@
           ]
         }
       ],
-      "flag": "🇧🇷"
+      "countryCode": "br"
     },
     {
       "slug": "san-carlo",
@@ -1976,7 +1976,7 @@
           ]
         }
       ],
-      "flag": "🇵🇭"
+      "countryCode": "ph"
     },
     {
       "slug": "san-juan",
@@ -1993,7 +1993,7 @@
           ]
         }
       ],
-      "flag": "🇵🇷"
+      "countryCode": "pr"
     },
     {
       "slug": "san-pedro-sula",
@@ -2013,7 +2013,7 @@
           ]
         }
       ],
-      "flag": "🇭🇳"
+      "countryCode": "hn"
     },
     {
       "slug": "santa-cruz",
@@ -2033,7 +2033,7 @@
           ]
         }
       ],
-      "flag": "🇧🇴"
+      "countryCode": "bo"
     },
     {
       "slug": "santiago",
@@ -2053,7 +2053,7 @@
           ]
         }
       ],
-      "flag": "🇨🇱"
+      "countryCode": "cl"
     },
     {
       "slug": "tahiti",
@@ -2079,7 +2079,7 @@
           ]
         }
       ],
-      "flag": "🇵🇫"
+      "countryCode": "pf"
     },
     {
       "slug": "tatu-city",
@@ -2096,7 +2096,7 @@
           ]
         }
       ],
-      "flag": "🇰🇪"
+      "countryCode": "ke"
     },
     {
       "slug": "trujillo",
@@ -2113,7 +2113,7 @@
           ]
         }
       ],
-      "flag": "🇵🇪"
+      "countryCode": "pe"
     },
     {
       "slug": "valencia-venezuela",
@@ -2130,7 +2130,7 @@
           ]
         }
       ],
-      "flag": "🇻🇪"
+      "countryCode": "ve"
     },
     {
       "slug": "vanadzor",
@@ -2150,7 +2150,7 @@
           ]
         }
       ],
-      "flag": "🇦🇲"
+      "countryCode": "am"
     },
     {
       "slug": "veracruz",
@@ -2167,7 +2167,7 @@
           ]
         }
       ],
-      "flag": "🇲🇽"
+      "countryCode": "mx"
     },
     {
       "slug": "vienna",
@@ -2196,7 +2196,7 @@
           ]
         }
       ],
-      "flag": "🇦🇹"
+      "countryCode": "at"
     },
     {
       "slug": "vinnytsia",
@@ -2213,7 +2213,7 @@
           ]
         }
       ],
-      "flag": "🇺🇦"
+      "countryCode": "ua"
     },
     {
       "slug": "yenagoa",
@@ -2236,7 +2236,7 @@
           ]
         }
       ],
-      "flag": "🇳🇬"
+      "countryCode": "ng"
     }
   ],
   "uncategorized": [
@@ -2249,7 +2249,7 @@
           "year": 2025
         }
       ],
-      "flag": "🌍"
+      "countryCode": ""
     },
     {
       "slug": "beeple",
@@ -2260,7 +2260,7 @@
           "year": 2025
         }
       ],
-      "flag": "🎨"
+      "countryCode": ""
     },
     {
       "slug": "caribbean-region",
@@ -2275,7 +2275,7 @@
           "year": 2025
         }
       ],
-      "flag": "🏝️"
+      "countryCode": ""
     },
     {
       "slug": "india",
@@ -2286,7 +2286,7 @@
           "year": 2024
         }
       ],
-      "flag": "🇮🇳"
+      "countryCode": "in"
     }
   ]
 }

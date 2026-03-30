@@ -5,14 +5,15 @@ import photosData from "@/data/photos.json";
 
 // Gather all photos for the hero slideshow
 function getAllPhotos() {
-  const photos: { src: string; label: string }[] = [];
+  const photos: { src: string; label: string; countryCode?: string }[] = [];
   for (const city of photosData.cities) {
-    const flag = (city as { flag?: string }).flag || "";
+    const cc = (city as { countryCode?: string }).countryCode || "";
     for (const yearGroup of city.years) {
       for (const photo of yearGroup.photos) {
         photos.push({
           src: photo.src,
-          label: `${flag} ${city.name} ${yearGroup.year}`,
+          label: `${city.name} ${yearGroup.year}`,
+          countryCode: cc,
         });
       }
     }

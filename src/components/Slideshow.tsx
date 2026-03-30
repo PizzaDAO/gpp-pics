@@ -3,9 +3,10 @@
 import { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
+import Flag from "./Flag";
 
 interface SlideshowProps {
-  photos: { src: string; label?: string }[];
+  photos: { src: string; label?: string; countryCode?: string }[];
   autoplay?: boolean;
   className?: string;
 }
@@ -78,7 +79,10 @@ export default function Slideshow({
               />
               {photo.label && (
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 pt-12">
-                  <p className="text-white font-bold text-lg">{photo.label}</p>
+                  <p className="text-white font-bold text-lg">
+                    {photo.countryCode && <><Flag countryCode={photo.countryCode} /> </>}
+                    {photo.label}
+                  </p>
                 </div>
               )}
             </div>

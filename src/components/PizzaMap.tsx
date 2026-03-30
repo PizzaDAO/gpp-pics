@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
 import L from "leaflet";
 import Slideshow from "./Slideshow";
+import Flag from "./Flag";
 
 interface Photo {
   src: string;
@@ -17,7 +18,7 @@ interface YearGroup {
 interface City {
   slug: string;
   name: string;
-  flag?: string;
+  countryCode?: string;
   lat: number;
   lng: number;
   years: YearGroup[];
@@ -55,7 +56,7 @@ function CityPopup({ city }: { city: City }) {
   return (
     <div className="w-[320px]">
       <h3 className="font-black text-lg mb-2" style={{ color: "#FFE135" }}>
-        {city.flag && <span>{city.flag} </span>}{city.name}
+        {city.countryCode && <><Flag countryCode={city.countryCode} /> </>}{city.name}
       </h3>
 
       {allYears.length > 1 && (

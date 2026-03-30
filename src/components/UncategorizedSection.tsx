@@ -1,6 +1,7 @@
 "use client";
 
 import Slideshow from "./Slideshow";
+import Flag from "./Flag";
 
 interface UncategorizedPhoto {
   src: string;
@@ -10,7 +11,7 @@ interface UncategorizedPhoto {
 interface UncategorizedGroup {
   slug: string;
   name: string;
-  flag?: string;
+  countryCode?: string;
   photos: UncategorizedPhoto[];
 }
 
@@ -35,7 +36,7 @@ export default function UncategorizedSection({
             key={group.slug}
             className="bg-bg-card rounded-xl p-4 border border-white/10"
           >
-            <h3 className="font-bold text-lg mb-3">{group.flag && <span>{group.flag} </span>}{group.name}</h3>
+            <h3 className="font-bold text-lg mb-3">{group.countryCode && <><Flag countryCode={group.countryCode} /> </>}{group.name}</h3>
             <Slideshow
               photos={group.photos.map((p) => ({
                 src: p.src,
