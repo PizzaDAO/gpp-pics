@@ -1,10 +1,12 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
 import L from "leaflet";
 import Slideshow from "./Slideshow";
 import Flag from "./Flag";
+import FullscreenGallery from "./FullscreenGallery";
 
 interface Photo {
   src: string;
@@ -48,45 +50,77 @@ function FitBounds({ cities }: { cities: City[] }) {
 
 function CityPopup({ city }: { city: City }) {
   const [selectedYear, setSelectedYear] = useState<number | null>(null);
+  const [fullscreen, setFullscreen] = useState(false);
   const allYears = city.years.map((y) => y.year).sort((a, b) => b - a);
   const activeYear = selectedYear ?? allYears[0];
   const activePhotos =
     city.years.find((y) => y.year === activeYear)?.photos ?? [];
 
   return (
-    <div className="w-[320px]">
-      <h3 className="font-black text-lg mb-2" style={{ color: "#FFE135" }}>
-        {city.countryCode && <><Flag countryCode={city.countryCode} /> </>}{city.name}
-      </h3>
-
-      {allYears.length > 1 && (
-        <div className="flex gap-1 mb-2">
-          {allYears.map((year) => (
-            <button
-              key={year}
-              onClick={() => setSelectedYear(year)}
-              className="px-2 py-0.5 rounded text-xs font-bold transition-colors cursor-pointer"
-              style={{
-                background: year === activeYear ? "#FFE135" : "#333",
-                color: year === activeYear ? "#000" : "#fff",
-              }}
-            >
-              {year}
-            </button>
-          ))}
+    <>
+      <div className="w-[320px]">
+        <div className="flex items-center justify-between mb-2">
+          <h3 className="font-black text-lg" style={{ color: "#FFE135" }}>
+            {city.countryCode && <><Flag countryCode={city.countryCode} /> </>}{city.name}
+          </h3>
+          <button
+            type="button"
+            onClick={() => setFullscreen(true)}
+            className="p-1.5 rounded-lg transition-colors cursor-pointer hover:bg-white/10"
+            style={{ color: "#FFE135" }}
+            aria-label="Open fullscreen gallery"
+            title="Fullscreen gallery"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M8 3H5a2 2 0 0 0-2 2v3" />
+              <path d="M21 8V5a2 2 0 0 0-2-2h-3" />
+              <path d="M3 16v3a2 2 0 0 0 2 2h3" />
+              <path d="M16 21h3a2 2 0 0 0 2-2v-3" />
+            </svg>
+          </button>
         </div>
-      )}
 
-      <Slideshow
-        photos={activePhotos.map((p) => ({ src: p.src }))}
-        autoplay={false}
-      />
+        {allYears.length > 1 && (
+          <div className="flex gap-1 mb-2">
+            {allYears.map((year) => (
+              <button
+                key={year}
+                onClick={() => setSelectedYear(year)}
+                className="px-2 py-0.5 rounded text-xs font-bold transition-colors cursor-pointer"
+                style={{
+                  background: year === activeYear ? "#FFE135" : "#333",
+                  color: year === activeYear ? "#000" : "#fff",
+                }}
+              >
+                {year}
+              </button>
+            ))}
+          </div>
+        )}
 
-      <p className="text-xs mt-2" style={{ color: "#a0a0a0" }}>
-        {activePhotos.length} photo{activePhotos.length !== 1 ? "s" : ""} from{" "}
-        {activeYear}
-      </p>
-    </div>
+        <Slideshow
+          photos={activePhotos.map((p) => ({ src: p.src }))}
+          autoplay={false}
+        />
+
+        <p className="text-xs mt-2" style={{ color: "#a0a0a0" }}>
+          {activePhotos.length} photo{activePhotos.length !== 1 ? "s" : ""} from{" "}
+          {activeYear}
+        </p>
+      </div>
+
+      {fullscreen &&
+        createPortal(
+          <FullscreenGallery
+            photos={activePhotos}
+            cityName={city.name}
+            countryCode={city.countryCode}
+            year={activeYear}
+            onClose={() => setFullscreen(false)}
+          />,
+          document.body
+        )}
+    </>
   );
 }
 
