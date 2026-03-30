@@ -36,27 +36,21 @@ export default function Slideshow({
     };
   }, [emblaApi, onSelect]);
 
-  const resetAutoplay = useCallback(() => {
+  const scrollPrev = useCallback(() => {
     if (!emblaApi) return;
     const autoplayPlugin = emblaApi.plugins()?.autoplay;
-    if (autoplayPlugin) {
-      autoplayPlugin.reset();
-    }
+    if (autoplayPlugin) autoplayPlugin.stop();
+    emblaApi.scrollPrev();
+    if (autoplayPlugin) autoplayPlugin.play();
   }, [emblaApi]);
 
-  const scrollPrev = useCallback(() => {
-    if (emblaApi) {
-      emblaApi.scrollPrev();
-      resetAutoplay();
-    }
-  }, [emblaApi, resetAutoplay]);
-
   const scrollNext = useCallback(() => {
-    if (emblaApi) {
-      emblaApi.scrollNext();
-      resetAutoplay();
-    }
-  }, [emblaApi, resetAutoplay]);
+    if (!emblaApi) return;
+    const autoplayPlugin = emblaApi.plugins()?.autoplay;
+    if (autoplayPlugin) autoplayPlugin.stop();
+    emblaApi.scrollNext();
+    if (autoplayPlugin) autoplayPlugin.play();
+  }, [emblaApi]);
 
   const scrollTo = useCallback(
     (index: number) => {
