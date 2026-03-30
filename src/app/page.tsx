@@ -7,11 +7,12 @@ import photosData from "@/data/photos.json";
 function getAllPhotos() {
   const photos: { src: string; label: string }[] = [];
   for (const city of photosData.cities) {
+    const flag = (city as { flag?: string }).flag || "";
     for (const yearGroup of city.years) {
       for (const photo of yearGroup.photos) {
         photos.push({
           src: photo.src,
-          label: `${city.name} ${yearGroup.year}`,
+          label: `${flag} ${city.name} ${yearGroup.year}`,
         });
       }
     }
@@ -34,9 +35,6 @@ export default function Home() {
           <span className="text-pizza-yellow">PizzaDAO&apos;s</span> Global Pizza
           Party
         </h1>
-        <p className="text-text-secondary mt-2 text-lg">
-          {totalPhotos} photos from {totalCities} cities worldwide
-        </p>
       </header>
 
       <div className="max-w-6xl mx-auto px-4 pb-16">

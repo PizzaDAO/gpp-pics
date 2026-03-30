@@ -17,6 +17,7 @@ interface YearGroup {
 interface City {
   slug: string;
   name: string;
+  flag?: string;
   lat: number;
   lng: number;
   years: YearGroup[];
@@ -55,7 +56,7 @@ function CityPopup({ city }: { city: City }) {
   return (
     <div className="w-[320px]">
       <h3 className="font-black text-lg mb-2" style={{ color: "#FFE135" }}>
-        {city.name}
+        {city.flag && <span>{city.flag} </span>}{city.name}
       </h3>
 
       {allYears.length > 1 && (
