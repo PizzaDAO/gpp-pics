@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "cp src/data/photos.json public/api/photos.json",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"
