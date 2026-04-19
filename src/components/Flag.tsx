@@ -1,4 +1,4 @@
-const COUNTRY_NAMES: Record<string, string> = {
+export const COUNTRY_NAMES: Record<string, string> = {
   ae: "United Arab Emirates", af: "Afghanistan", al: "Albania", am: "Armenia",
   ar: "Argentina", at: "Austria", au: "Australia", be: "Belgium",
   bf: "Burkina Faso", bg: "Bulgaria", bj: "Benin", bo: "Bolivia",
