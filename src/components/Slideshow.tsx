@@ -9,12 +9,14 @@ interface SlideshowProps {
   photos: { src: string; label?: string; countryCode?: string }[];
   autoplay?: boolean;
   className?: string;
+  onSlideChange?: (index: number) => void;
 }
 
 export default function Slideshow({
   photos,
   autoplay = true,
   className = "",
+  onSlideChange,
 }: SlideshowProps) {
   const plugins = autoplay
     ? [Autoplay({ delay: 4000, stopOnInteraction: false, stopOnMouseEnter: true })]
@@ -25,8 +27,10 @@ export default function Slideshow({
 
   const onSelect = useCallback(() => {
     if (!emblaApi) return;
-    setSelectedIndex(emblaApi.selectedScrollSnap());
-  }, [emblaApi]);
+    const idx = emblaApi.selectedScrollSnap();
+    setSelectedIndex(idx);
+    onSlideChange?.(idx);
+  }, [emblaApi, onSlideChange]);
 
   useEffect(() => {
     if (!emblaApi) return;
