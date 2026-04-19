@@ -1,6 +1,7 @@
 import Slideshow from "@/components/Slideshow";
 import MapWrapper from "@/components/MapWrapper";
 import UncategorizedSection from "@/components/UncategorizedSection";
+import RandomCityButton from "@/components/RandomCityButton";
 import photosData from "@/data/photos.json";
 
 // Gather all photos for the hero slideshow
@@ -36,6 +37,9 @@ export default function Home() {
           <span className="text-pizza-yellow">PizzaDAO&apos;s</span> Global Pizza
           Party
         </h1>
+        <div className="mt-4">
+          <RandomCityButton />
+        </div>
       </header>
 
       <div className="max-w-6xl mx-auto px-4 pb-16">

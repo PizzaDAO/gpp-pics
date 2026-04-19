@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useMemo, useRef, useEffect } from "react";
+import { useState, useMemo, useRef, useEffect, Suspense } from "react";
+import { useSearchParams } from "next/navigation";
 import photosData from "@/data/photos.json";
 import { COUNTRY_NAMES } from "@/components/Flag";
 
@@ -56,7 +57,7 @@ const sortedCities: City[] = [...(photosData.cities as City[])].sort((a, b) =>
 // Component
 // ---------------------------------------------------------------------------
 
-export default function ComposePage() {
+function ComposeContent() {
   // --- state ----------------------------------------------------------------
   const [search, setSearch] = useState("");
   const [selectedCity, setSelectedCity] = useState<City | null>(null);
@@ -69,6 +70,20 @@ export default function ComposePage() {
 
   const dropdownRef = useRef<HTMLDivElement>(null);
   const days = useMemo(() => daysUntilGPP(), []);
+  const searchParams = useSearchParams();
+
+  // Pre-select city from URL query param
+  useEffect(() => {
+    const citySlug = searchParams.get("city");
+    if (citySlug && !selectedCity) {
+      const found = sortedCities.find((c) => c.slug === citySlug);
+      if (found) {
+        selectCity(found);
+      }
+    }
+    // Only run on mount
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   // Close dropdown on outside click
   useEffect(() => {
@@ -346,5 +361,13 @@ export default function ComposePage() {
         )}
       </div>
     </main>
+  );
+}
+
+export default function ComposePage() {
+  return (
+    <Suspense fallback={<div className="flex-1" />}>
+      <ComposeContent />
+    </Suspense>
   );
 }
