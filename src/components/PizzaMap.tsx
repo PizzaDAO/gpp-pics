@@ -103,10 +103,19 @@ function CityPopup({ city }: { city: City }) {
           autoplay={false}
         />
 
-        <p className="text-xs mt-2" style={{ color: "#a0a0a0" }}>
-          {activePhotos.length} photo{activePhotos.length !== 1 ? "s" : ""} from{" "}
-          {activeYear}
-        </p>
+        <div className="flex items-center justify-between mt-2">
+          <p className="text-xs" style={{ color: "#a0a0a0" }}>
+            {activePhotos.length} photo{activePhotos.length !== 1 ? "s" : ""} from{" "}
+            {activeYear}
+          </p>
+          <a
+            href={`/compose?city=${city.slug}`}
+            className="text-xs font-bold px-2.5 py-1 rounded-md transition-colors no-underline"
+            style={{ background: "#FFE135", color: "#0a0a0a" }}
+          >
+            ✍️ Compose
+          </a>
+        </div>
       </div>
 
       {fullscreen &&
