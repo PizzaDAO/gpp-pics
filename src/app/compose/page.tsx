@@ -1,9 +1,11 @@
 "use client";
 
 import { useState, useMemo, useRef, useEffect, Suspense } from "react";
+import { createPortal } from "react-dom";
 import { useSearchParams } from "next/navigation";
 import photosData from "@/data/photos.json";
 import { COUNTRY_NAMES } from "@/components/Flag";
+import FullscreenGallery from "@/components/FullscreenGallery";
 
 // ---------------------------------------------------------------------------
 // Helpers
@@ -67,6 +69,7 @@ function ComposeContent() {
   const [tweetText, setTweetText] = useState("");
   const [copied, setCopied] = useState(false);
   const [selectedPhoto, setSelectedPhoto] = useState<string | null>(null);
+  const [galleryOpen, setGalleryOpen] = useState(false);
 
   const dropdownRef = useRef<HTMLDivElement>(null);
   const days = useMemo(() => daysUntilGPP(), []);
@@ -317,9 +320,18 @@ function ComposeContent() {
         {/* ---- Photo picker ---- */}
         {selectedCity && allPhotos.length > 0 && (
           <section>
-            <h2 className="text-lg font-bold text-text-primary mb-3">
-              Photos from {selectedCity.name}
-            </h2>
+            <div className="flex items-center justify-between mb-3">
+              <h2 className="text-lg font-bold text-text-primary">
+                Photos from {selectedCity.name}
+              </h2>
+              <button
+                type="button"
+                onClick={() => setGalleryOpen(true)}
+                className="text-sm font-medium text-pizza-yellow hover:brightness-110 transition-colors"
+              >
+                View Gallery
+              </button>
+            </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
               {allPhotos.map((photo) => (
                 <div
@@ -329,7 +341,7 @@ function ComposeContent() {
                       ? "border-pizza-yellow"
                       : "border-transparent hover:border-white/20"
                   }`}
-                  onClick={() => setSelectedPhoto(photo.src)}
+                  onClick={() => setGalleryOpen(true)}
                 >
                   <img
                     src={photo.src}
@@ -360,6 +372,20 @@ function ComposeContent() {
           </p>
         )}
       </div>
+
+      {/* Fullscreen gallery portal */}
+      {galleryOpen && selectedCity &&
+        createPortal(
+          <FullscreenGallery
+            photos={allPhotos}
+            cityName={selectedCity.name}
+            countryCode={selectedCity.countryCode}
+            year={selectedCity.years[0]?.year ?? 2025}
+            onClose={() => setGalleryOpen(false)}
+            onDownload={downloadPhoto}
+          />,
+          document.body
+        )}
     </main>
   );
 }
