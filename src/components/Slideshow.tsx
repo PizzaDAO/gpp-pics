@@ -9,12 +9,16 @@ interface SlideshowProps {
   photos: { src: string; label?: string; countryCode?: string }[];
   autoplay?: boolean;
   className?: string;
+  onSlideChange?: (index: number) => void;
+  scrollToRef?: React.MutableRefObject<((index: number) => void) | null>;
 }
 
 export default function Slideshow({
   photos,
   autoplay = true,
   className = "",
+  onSlideChange,
+  scrollToRef,
 }: SlideshowProps) {
   const plugins = autoplay
     ? [Autoplay({ delay: 4000, stopOnInteraction: false, stopOnMouseEnter: true })]
@@ -25,8 +29,10 @@ export default function Slideshow({
 
   const onSelect = useCallback(() => {
     if (!emblaApi) return;
-    setSelectedIndex(emblaApi.selectedScrollSnap());
-  }, [emblaApi]);
+    const idx = emblaApi.selectedScrollSnap();
+    setSelectedIndex(idx);
+    onSlideChange?.(idx);
+  }, [emblaApi, onSlideChange]);
 
   useEffect(() => {
     if (!emblaApi) return;
@@ -55,10 +61,19 @@ export default function Slideshow({
 
   const scrollTo = useCallback(
     (index: number) => {
-      if (emblaApi) emblaApi.scrollTo(index);
+      if (!emblaApi) return;
+      const autoplayPlugin = emblaApi.plugins()?.autoplay;
+      if (autoplayPlugin) autoplayPlugin.stop();
+      emblaApi.scrollTo(index);
+      if (autoplayPlugin) autoplayPlugin.play();
     },
     [emblaApi]
   );
+
+  // Expose scrollTo to parent via ref
+  useEffect(() => {
+    if (scrollToRef) scrollToRef.current = scrollTo;
+  }, [scrollToRef, scrollTo]);
 
   if (photos.length === 0) return null;
 
