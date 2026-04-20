@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import Slideshow from "./Slideshow";
 import Flag from "./Flag";
 
@@ -22,12 +22,37 @@ export default function FullscreenGallery({
   onDownload,
 }: FullscreenGalleryProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const scrollToRef = useRef<((index: number) => void) | null>(null);
+  const currentIndexRef = useRef(0);
+
+  // Keep ref in sync for use in keydown handler
+  useEffect(() => {
+    currentIndexRef.current = currentIndex;
+  }, [currentIndex]);
 
   const handleKeyDown = useCallback(
     (e: KeyboardEvent) => {
+      const len = photos.length;
       if (e.key === "Escape") onClose();
+      else if (e.key === "ArrowLeft") {
+        e.preventDefault();
+        const next = (currentIndexRef.current - 1 + len) % len;
+        scrollToRef.current?.(next);
+      } else if (e.key === "ArrowRight") {
+        e.preventDefault();
+        const next = (currentIndexRef.current + 1) % len;
+        scrollToRef.current?.(next);
+      } else if (e.key === "ArrowUp") {
+        e.preventDefault();
+        const next = (currentIndexRef.current - 5 + len) % len;
+        scrollToRef.current?.(next);
+      } else if (e.key === "ArrowDown") {
+        e.preventDefault();
+        const next = (currentIndexRef.current + 5) % len;
+        scrollToRef.current?.(next);
+      }
     },
-    [onClose]
+    [onClose, photos.length]
   );
 
   useEffect(() => {
@@ -97,6 +122,7 @@ export default function FullscreenGallery({
             photos={photos.map((p) => ({ src: p.src }))}
             autoplay={false}
             onSlideChange={setCurrentIndex}
+            scrollToRef={scrollToRef}
           />
         </div>
       </div>
