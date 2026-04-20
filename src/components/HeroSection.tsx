@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import Slideshow from "./Slideshow";
 
@@ -13,13 +13,13 @@ interface HeroPhoto {
 export default function HeroSection({ photos }: { photos: HeroPhoto[] }) {
   const router = useRouter();
   const [currentIndex, setCurrentIndex] = useState(0);
+  const scrollToRef = useRef<((index: number) => void) | null>(null);
 
   const currentSlug = photos[currentIndex]?.src.split("/")[2] || "";
 
   function handleRandom() {
-    const slugs = [...new Set(photos.map((p) => p.src.split("/")[2]))];
-    const randomSlug = slugs[Math.floor(Math.random() * slugs.length)];
-    router.push(`/compose?city=${randomSlug}`);
+    const randomIndex = Math.floor(Math.random() * photos.length);
+    scrollToRef.current?.(randomIndex);
   }
 
   function handleCompose() {
@@ -34,6 +34,7 @@ export default function HeroSection({ photos }: { photos: HeroPhoto[] }) {
         photos={photos}
         autoplay={true}
         onSlideChange={setCurrentIndex}
+        scrollToRef={scrollToRef}
       />
       <div className="flex justify-center gap-3 mt-4">
         <button
