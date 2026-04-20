@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect } from "react";
+import { useCallback, useEffect, useState } from "react";
 import Slideshow from "./Slideshow";
 import Flag from "./Flag";
 
@@ -10,6 +10,7 @@ interface FullscreenGalleryProps {
   countryCode?: string;
   year: number;
   onClose: () => void;
+  onDownload?: (src: string) => void;
 }
 
 export default function FullscreenGallery({
@@ -18,7 +19,10 @@ export default function FullscreenGallery({
   countryCode,
   year,
   onClose,
+  onDownload,
 }: FullscreenGalleryProps) {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
   const handleKeyDown = useCallback(
     (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
@@ -53,26 +57,37 @@ export default function FullscreenGallery({
           {cityName}{" "}
           <span className="text-pizza-yellow">{year}</span>
         </h2>
-        <button
-          type="button"
-          onClick={onClose}
-          className="text-white hover:text-pizza-yellow transition-colors cursor-pointer p-2"
-          aria-label="Close gallery"
-        >
-          <svg
-            width="32"
-            height="32"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+        <div className="flex items-center gap-2">
+          {onDownload && (
+            <button
+              type="button"
+              onClick={() => onDownload(photos[currentIndex].src)}
+              className="bg-pizza-yellow text-bg-dark font-bold text-sm rounded-lg px-4 py-2 hover:brightness-110 transition-colors cursor-pointer"
+            >
+              Download
+            </button>
+          )}
+          <button
+            type="button"
+            onClick={onClose}
+            className="text-white hover:text-pizza-yellow transition-colors cursor-pointer p-2"
+            aria-label="Close gallery"
           >
-            <path d="M18 6L6 18" />
-            <path d="M6 6l12 12" />
-          </svg>
-        </button>
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M18 6L6 18" />
+              <path d="M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
       </div>
 
       {/* Gallery */}
@@ -81,13 +96,14 @@ export default function FullscreenGallery({
           <Slideshow
             photos={photos.map((p) => ({ src: p.src }))}
             autoplay={false}
+            onSlideChange={setCurrentIndex}
           />
         </div>
       </div>
 
       {/* Photo count */}
       <div className="text-center pb-4 text-text-secondary text-sm">
-        {photos.length} photo{photos.length !== 1 ? "s" : ""}
+        {currentIndex + 1} / {photos.length} photo{photos.length !== 1 ? "s" : ""}
       </div>
     </div>
   );
