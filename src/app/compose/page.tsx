@@ -123,7 +123,7 @@ function ComposeContent() {
   useEffect(() => {
     if (!selectedCity) {
       setTweetText(
-        `${days} days until the Global Pizza Party on Friday, May 22!`
+        `🗺️🍕🥳\n${days} days until the Global Pizza Party on Friday, May 22!`
       );
       return;
     }
@@ -132,7 +132,7 @@ function ComposeContent() {
     const handle = host ? `@${host}` : "@handle";
 
     setTweetText(
-      `${days} days until the Global Pizza Party on Friday, May 22!\n\n${flag} Last year's party in ${selectedCity.name}, ${countryName}. Hosted by ${handle}:`
+      `🗺️🍕🥳\n${days} days until the Global Pizza Party on Friday, May 22!\n\n${flag} Last year's party in ${selectedCity.name}, ${countryName}. Hosted by ${handle}:`
     );
   }, [days, selectedCity, countryName, host]);
 
