@@ -72,9 +72,6 @@
           "photos": [
             {
               "src": "/photos/abidjan/2025/01.jpg"
-            },
-            {
-              "src": "/photos/abidjan/2025/02.jpg"
             }
           ]
         }
@@ -143,9 +140,6 @@
           "photos": [
             {
               "src": "/photos/aklan/2025/01.jpg"
-            },
-            {
-              "src": "/photos/aklan/2025/02.jpg"
             }
           ]
         }
@@ -617,23 +611,6 @@
       "countryCode": "lb"
     },
     {
-      "slug": "belize",
-      "name": "Belize City",
-      "lat": 17.5046,
-      "lng": -88.1962,
-      "years": [
-        {
-          "year": 2025,
-          "photos": [
-            {
-              "src": "/photos/belize/2025/01.jpg"
-            }
-          ]
-        }
-      ],
-      "countryCode": "bz"
-    },
-    {
       "slug": "belize-city",
       "name": "Belize City",
       "lat": 17.4984,
@@ -874,9 +851,6 @@
           "photos": [
             {
               "src": "/photos/brisbane/2025/01.jpg"
-            },
-            {
-              "src": "/photos/brisbane/2025/03.jpg"
             }
           ]
         }
@@ -1279,26 +1253,6 @@
       "countryCode": "it"
     },
     {
-      "slug": "cayman",
-      "name": "Cayman Islands",
-      "lat": 19.3133,
-      "lng": -81.2546,
-      "years": [
-        {
-          "year": 2025,
-          "photos": [
-            {
-              "src": "/photos/cayman/2025/01.jpg"
-            },
-            {
-              "src": "/photos/cayman/2025/02.jpg"
-            }
-          ]
-        }
-      ],
-      "countryCode": "ky"
-    },
-    {
       "slug": "cayman-islands",
       "name": "Cayman Islands",
       "lat": 19.3133,
@@ -1312,6 +1266,9 @@
             },
             {
               "src": "/photos/cayman-islands/2025/02.png"
+            },
+            {
+              "src": "/photos/cayman-islands/2025/03.jpg"
             }
           ]
         }
@@ -1467,12 +1424,6 @@
             },
             {
               "src": "/photos/chiang-mai/2025/05.jpg"
-            },
-            {
-              "src": "/photos/chiang-mai/2025/06.jpg"
-            },
-            {
-              "src": "/photos/chiang-mai/2025/07.jpg"
             }
           ]
         }
@@ -1534,9 +1485,6 @@
             },
             {
               "src": "/photos/cleveland/2025/02.jpg"
-            },
-            {
-              "src": "/photos/cleveland/2025/06.jpg"
             }
           ]
         }
@@ -1589,9 +1537,6 @@
             },
             {
               "src": "/photos/cochabamba/2025/04.jpg"
-            },
-            {
-              "src": "/photos/cochabamba/2025/05.jpg"
             }
           ]
         }
@@ -2035,26 +1980,6 @@
       "countryCode": "ve"
     },
     {
-      "slug": "el-salvador",
-      "name": "El Salvador",
-      "lat": 13.7942,
-      "lng": -88.8965,
-      "years": [
-        {
-          "year": 2025,
-          "photos": [
-            {
-              "src": "/photos/el-salvador/2025/01.jpg"
-            },
-            {
-              "src": "/photos/el-salvador/2025/02.jpg"
-            }
-          ]
-        }
-      ],
-      "countryCode": "sv"
-    },
-    {
       "slug": "entebbe",
       "name": "Entebbe",
       "lat": 0.0512,
@@ -2085,9 +2010,6 @@
           "photos": [
             {
               "src": "/photos/entre-rios/2025/01.jpg"
-            },
-            {
-              "src": "/photos/entre-rios/2025/03.jpg"
             }
           ]
         }
@@ -2429,26 +2351,6 @@
       "countryCode": "cn"
     },
     {
-      "slug": "guatemala",
-      "name": "Guatemala City",
-      "lat": 14.6349,
-      "lng": -90.5069,
-      "years": [
-        {
-          "year": 2025,
-          "photos": [
-            {
-              "src": "/photos/guatemala/2025/01.jpg"
-            },
-            {
-              "src": "/photos/guatemala/2025/02.jpg"
-            }
-          ]
-        }
-      ],
-      "countryCode": "gt"
-    },
-    {
       "slug": "guatemala-city",
       "name": "Guatemala City",
       "lat": 14.6349,
@@ -2479,9 +2381,6 @@
           "photos": [
             {
               "src": "/photos/guayaquil/2025/01.jpg"
-            },
-            {
-              "src": "/photos/guayaquil/2025/02.jpg"
             }
           ]
         }
@@ -2952,7 +2851,7 @@
     {
       "slug": "isla-margarita",
       "name": "Isla Margarita",
-      "lat": 11.0,
+      "lat": 11,
       "lng": -63.8667,
       "years": [
         {
@@ -3368,26 +3267,6 @@
       "countryCode": "jp"
     },
     {
-      "slug": "kwara",
-      "name": "Kwara",
-      "lat": 8.5,
-      "lng": 4.55,
-      "years": [
-        {
-          "year": 2025,
-          "photos": [
-            {
-              "src": "/photos/kwara/2025/02.jpg"
-            },
-            {
-              "src": "/photos/kwara/2025/03.jpg"
-            }
-          ]
-        }
-      ],
-      "countryCode": "ng"
-    },
-    {
       "slug": "kyiv",
       "name": "Kyiv",
       "lat": 50.4501,
@@ -3543,12 +3422,6 @@
             },
             {
               "src": "/photos/lisbon/2025/03.jpg"
-            },
-            {
-              "src": "/photos/lisbon/2025/04.jpg"
-            },
-            {
-              "src": "/photos/lisbon/2025/05.jpg"
             }
           ]
         }
@@ -4474,9 +4347,6 @@
           "photos": [
             {
               "src": "/photos/ojeda/2025/01.jpg"
-            },
-            {
-              "src": "/photos/ojeda/2025/02.jpg"
             }
           ]
         }
@@ -4909,9 +4779,6 @@
           "photos": [
             {
               "src": "/photos/prague/2025/01.jpg"
-            },
-            {
-              "src": "/photos/prague/2025/02.jpg"
             }
           ]
         }
@@ -4932,9 +4799,6 @@
             },
             {
               "src": "/photos/prayagraj/2025/02.jpg"
-            },
-            {
-              "src": "/photos/prayagraj/2025/03.jpg"
             }
           ]
         }
@@ -4955,9 +4819,6 @@
             },
             {
               "src": "/photos/puebla/2025/02.jpg"
-            },
-            {
-              "src": "/photos/puebla/2025/03.jpg"
             }
           ]
         }
@@ -5257,23 +5118,6 @@
       "countryCode": "us"
     },
     {
-      "slug": "san-carlo",
-      "name": "San Carlo",
-      "lat": 10.4806,
-      "lng": 123.3198,
-      "years": [
-        {
-          "year": 2025,
-          "photos": [
-            {
-              "src": "/photos/san-carlo/2025/01.jpg"
-            }
-          ]
-        }
-      ],
-      "countryCode": "ph"
-    },
-    {
       "slug": "san-carlos",
       "name": "San Carlos",
       "lat": 9.9681,
@@ -5344,9 +5188,6 @@
           "photos": [
             {
               "src": "/photos/san-juan/2025/01.jpg"
-            },
-            {
-              "src": "/photos/san-juan/2025/02.jpg"
             }
           ]
         }
@@ -5447,9 +5288,6 @@
             },
             {
               "src": "/photos/santiago/2025/02.jpg"
-            },
-            {
-              "src": "/photos/santiago/2025/03.jpg"
             }
           ]
         }
@@ -5729,26 +5567,6 @@
       "countryCode": "ee"
     },
     {
-      "slug": "tatu-city",
-      "name": "Tatu City",
-      "lat": -1.0841,
-      "lng": 36.962,
-      "years": [
-        {
-          "year": 2025,
-          "photos": [
-            {
-              "src": "/photos/tatu-city/2025/01.jpg"
-            },
-            {
-              "src": "/photos/tatu-city/2025/05.jpg"
-            }
-          ]
-        }
-      ],
-      "countryCode": "ke"
-    },
-    {
       "slug": "tegucigalpa",
       "name": "Tegucigalpa",
       "lat": 14.072,
@@ -5959,9 +5777,6 @@
             },
             {
               "src": "/photos/vanadzor/2025/02.jpg"
-            },
-            {
-              "src": "/photos/vanadzor/2025/03.jpg"
             }
           ]
         }
