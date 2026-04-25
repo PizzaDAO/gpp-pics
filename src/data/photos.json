@@ -342,6 +342,23 @@
       "countryCode": "ng"
     },
     {
+      "slug": "antigua",
+      "name": "Antigua",
+      "lat": 17.1037,
+      "lng": -61.7905,
+      "years": [
+        {
+          "year": 2025,
+          "photos": [
+            {
+              "src": "/photos/antigua/2025/01.jpg"
+            }
+          ]
+        }
+      ],
+      "countryCode": "ag"
+    },
+    {
       "slug": "antwerp",
       "name": "Antwerp",
       "lat": 51.2194,
@@ -377,6 +394,35 @@
         }
       ],
       "countryCode": "tz"
+    },
+    {
+      "slug": "asheville",
+      "name": "Asheville",
+      "lat": 35.5954,
+      "lng": -82.5508,
+      "years": [
+        {
+          "year": 2025,
+          "photos": [
+            {
+              "src": "/photos/asheville/2025/01.png"
+            },
+            {
+              "src": "/photos/asheville/2025/02.png"
+            },
+            {
+              "src": "/photos/asheville/2025/03.png"
+            },
+            {
+              "src": "/photos/asheville/2025/04.png"
+            },
+            {
+              "src": "/photos/asheville/2025/05.png"
+            }
+          ]
+        }
+      ],
+      "countryCode": "us"
     },
     {
       "slug": "astana",
@@ -552,6 +598,29 @@
         }
       ],
       "countryCode": "th"
+    },
+    {
+      "slug": "bar-harbor",
+      "name": "Bar Harbor",
+      "lat": 44.3876,
+      "lng": -68.2043,
+      "years": [
+        {
+          "year": 2025,
+          "photos": [
+            {
+              "src": "/photos/bar-harbor/2025/01.jpg"
+            },
+            {
+              "src": "/photos/bar-harbor/2025/02.jpg"
+            },
+            {
+              "src": "/photos/bar-harbor/2025/03.jpg"
+            }
+          ]
+        }
+      ],
+      "countryCode": "us"
     },
     {
       "slug": "barcelona",
@@ -1156,6 +1225,23 @@
       "countryCode": "br"
     },
     {
+      "slug": "cannes",
+      "name": "Cannes",
+      "lat": 43.5515,
+      "lng": 7.0134,
+      "years": [
+        {
+          "year": 2025,
+          "photos": [
+            {
+              "src": "/photos/cannes/2025/01.jpg"
+            }
+          ]
+        }
+      ],
+      "countryCode": "fr"
+    },
+    {
       "slug": "cape-town",
       "name": "Cape Town",
       "lat": -33.9249,
@@ -1424,6 +1510,9 @@
             },
             {
               "src": "/photos/chiang-mai/2025/05.jpg"
+            },
+            {
+              "src": "/photos/chiang-mai/2025/06.jpg"
             }
           ]
         }
@@ -1537,6 +1626,12 @@
             },
             {
               "src": "/photos/cochabamba/2025/04.jpg"
+            },
+            {
+              "src": "/photos/cochabamba/2025/05.jpg"
+            },
+            {
+              "src": "/photos/cochabamba/2025/06.jpg"
             }
           ]
         }
@@ -1936,6 +2031,9 @@
           "photos": [
             {
               "src": "/photos/durham/2025/01.jpg"
+            },
+            {
+              "src": "/photos/durham/2025/02.jpg"
             }
           ]
         }
@@ -2010,6 +2108,63 @@
           "photos": [
             {
               "src": "/photos/entre-rios/2025/01.jpg"
+            },
+            {
+              "src": "/photos/entre-rios/2025/02.jpg"
+            },
+            {
+              "src": "/photos/entre-rios/2025/03.jpg"
+            },
+            {
+              "src": "/photos/entre-rios/2025/04.jpg"
+            },
+            {
+              "src": "/photos/entre-rios/2025/05.jpg"
+            },
+            {
+              "src": "/photos/entre-rios/2025/06.jpg"
+            },
+            {
+              "src": "/photos/entre-rios/2025/07.jpg"
+            },
+            {
+              "src": "/photos/entre-rios/2025/08.jpg"
+            },
+            {
+              "src": "/photos/entre-rios/2025/09.jpg"
+            },
+            {
+              "src": "/photos/entre-rios/2025/10.png"
+            },
+            {
+              "src": "/photos/entre-rios/2025/11.png"
+            },
+            {
+              "src": "/photos/entre-rios/2025/12.png"
+            },
+            {
+              "src": "/photos/entre-rios/2025/13.png"
+            },
+            {
+              "src": "/photos/entre-rios/2025/14.png"
+            },
+            {
+              "src": "/photos/entre-rios/2025/15.png"
+            },
+            {
+              "src": "/photos/entre-rios/2025/16.png"
+            },
+            {
+              "src": "/photos/entre-rios/2025/17.png"
+            },
+            {
+              "src": "/photos/entre-rios/2025/18.png"
+            },
+            {
+              "src": "/photos/entre-rios/2025/19.png"
+            },
+            {
+              "src": "/photos/entre-rios/2025/20.png"
             }
           ]
         }
@@ -2035,6 +2190,26 @@
         }
       ],
       "countryCode": "ng"
+    },
+    {
+      "slug": "faryab",
+      "name": "Faryab",
+      "lat": 35.6481,
+      "lng": 64.8809,
+      "years": [
+        {
+          "year": 2025,
+          "photos": [
+            {
+              "src": "/photos/faryab/2025/01.jpg"
+            },
+            {
+              "src": "/photos/faryab/2025/02.jpg"
+            }
+          ]
+        }
+      ],
+      "countryCode": "af"
     },
     {
       "slug": "florence",
@@ -2201,6 +2376,52 @@
         }
       ],
       "countryCode": "lk"
+    },
+    {
+      "slug": "goshen",
+      "name": "Goshen",
+      "lat": 41.585,
+      "lng": -85.8344,
+      "years": [
+        {
+          "year": 2025,
+          "photos": [
+            {
+              "src": "/photos/goshen/2025/01.jpg"
+            }
+          ]
+        }
+      ],
+      "countryCode": "us"
+    },
+    {
+      "slug": "gotemba",
+      "name": "Gotemba",
+      "lat": 35.3088,
+      "lng": 138.9349,
+      "years": [
+        {
+          "year": 2025,
+          "photos": [
+            {
+              "src": "/photos/gotemba/2025/01.jpg"
+            },
+            {
+              "src": "/photos/gotemba/2025/02.jpg"
+            },
+            {
+              "src": "/photos/gotemba/2025/03.jpg"
+            },
+            {
+              "src": "/photos/gotemba/2025/04.jpg"
+            },
+            {
+              "src": "/photos/gotemba/2025/05.jpg"
+            }
+          ]
+        }
+      ],
+      "countryCode": "jp"
     },
     {
       "slug": "gothenburg",
@@ -2760,6 +2981,35 @@
       "countryCode": "in"
     },
     {
+      "slug": "hyuancao",
+      "name": "Hyuancao",
+      "lat": 0.0,
+      "lng": 0.0,
+      "years": [
+        {
+          "year": 2025,
+          "photos": [
+            {
+              "src": "/photos/hyuancao/2025/01.jpg"
+            },
+            {
+              "src": "/photos/hyuancao/2025/02.jpg"
+            },
+            {
+              "src": "/photos/hyuancao/2025/03.jpg"
+            },
+            {
+              "src": "/photos/hyuancao/2025/04.jpg"
+            },
+            {
+              "src": "/photos/hyuancao/2025/05.jpg"
+            }
+          ]
+        }
+      ],
+      "countryCode": "vn"
+    },
+    {
       "slug": "ibadan",
       "name": "Ibadan",
       "lat": 7.3775,
@@ -2775,6 +3025,26 @@
         }
       ],
       "countryCode": "ng"
+    },
+    {
+      "slug": "idaho-falls",
+      "name": "Idaho Falls",
+      "lat": 43.4888,
+      "lng": -112.0363,
+      "years": [
+        {
+          "year": 2025,
+          "photos": [
+            {
+              "src": "/photos/idaho-falls/2025/01.jpg"
+            },
+            {
+              "src": "/photos/idaho-falls/2025/02.jpg"
+            }
+          ]
+        }
+      ],
+      "countryCode": "us"
     },
     {
       "slug": "ijoko",
@@ -3140,6 +3410,29 @@
       "countryCode": "tg"
     },
     {
+      "slug": "keffi",
+      "name": "Keffi",
+      "lat": 8.8453,
+      "lng": 7.8768,
+      "years": [
+        {
+          "year": 2025,
+          "photos": [
+            {
+              "src": "/photos/keffi/2025/01.jpg"
+            },
+            {
+              "src": "/photos/keffi/2025/02.jpg"
+            },
+            {
+              "src": "/photos/keffi/2025/03.jpg"
+            }
+          ]
+        }
+      ],
+      "countryCode": "ng"
+    },
+    {
       "slug": "kelowna",
       "name": "Kelowna",
       "lat": 49.888,
@@ -3201,6 +3494,32 @@
       "countryCode": "ke"
     },
     {
+      "slug": "koh-phangan",
+      "name": "Koh Phangan",
+      "lat": 9.735,
+      "lng": 100.0306,
+      "years": [
+        {
+          "year": 2025,
+          "photos": [
+            {
+              "src": "/photos/koh-phangan/2025/01.jpg"
+            },
+            {
+              "src": "/photos/koh-phangan/2025/02.jpg"
+            },
+            {
+              "src": "/photos/koh-phangan/2025/03.jpg"
+            },
+            {
+              "src": "/photos/koh-phangan/2025/04.jpg"
+            }
+          ]
+        }
+      ],
+      "countryCode": "th"
+    },
+    {
       "slug": "kosice",
       "name": "Kosice",
       "lat": 48.7164,
@@ -3222,6 +3541,23 @@
         }
       ],
       "countryCode": "sk"
+    },
+    {
+      "slug": "kristiansand",
+      "name": "Kristiansand",
+      "lat": 58.0856,
+      "lng": 7.9319,
+      "years": [
+        {
+          "year": 2025,
+          "photos": [
+            {
+              "src": "/photos/kristiansand/2025/01.jpg"
+            }
+          ]
+        }
+      ],
+      "countryCode": "no"
     },
     {
       "slug": "kuala-lumpur",
@@ -3284,6 +3620,26 @@
       "countryCode": "ua"
     },
     {
+      "slug": "laax",
+      "name": "Laax",
+      "lat": 46.8064,
+      "lng": 9.2581,
+      "years": [
+        {
+          "year": 2025,
+          "photos": [
+            {
+              "src": "/photos/laax/2025/01.jpg"
+            },
+            {
+              "src": "/photos/laax/2025/02.jpg"
+            }
+          ]
+        }
+      ],
+      "countryCode": "ch"
+    },
+    {
       "slug": "lagos",
       "name": "Lagos",
       "lat": 6.5244,
@@ -3305,6 +3661,29 @@
         }
       ],
       "countryCode": "ng"
+    },
+    {
+      "slug": "lamu",
+      "name": "Lamu",
+      "lat": -2.2675,
+      "lng": 40.9011,
+      "years": [
+        {
+          "year": 2025,
+          "photos": [
+            {
+              "src": "/photos/lamu/2025/01.jpg"
+            },
+            {
+              "src": "/photos/lamu/2025/02.jpg"
+            },
+            {
+              "src": "/photos/lamu/2025/03.jpg"
+            }
+          ]
+        }
+      ],
+      "countryCode": "ke"
     },
     {
       "slug": "las-pinas",
@@ -3779,6 +4158,26 @@
       "countryCode": "af"
     },
     {
+      "slug": "mechelen",
+      "name": "Mechelen",
+      "lat": 51.0281,
+      "lng": 4.4803,
+      "years": [
+        {
+          "year": 2025,
+          "photos": [
+            {
+              "src": "/photos/mechelen/2025/01.jpg"
+            },
+            {
+              "src": "/photos/mechelen/2025/02.jpg"
+            }
+          ]
+        }
+      ],
+      "countryCode": "be"
+    },
+    {
       "slug": "medellin",
       "name": "Medellin",
       "lat": 6.2442,
@@ -3956,6 +4355,29 @@
       "countryCode": "us"
     },
     {
+      "slug": "misiones",
+      "name": "Misiones",
+      "lat": -26.7372,
+      "lng": -54.4315,
+      "years": [
+        {
+          "year": 2025,
+          "photos": [
+            {
+              "src": "/photos/misiones/2025/01.jpg"
+            },
+            {
+              "src": "/photos/misiones/2025/02.jpg"
+            },
+            {
+              "src": "/photos/misiones/2025/03.jpg"
+            }
+          ]
+        }
+      ],
+      "countryCode": "ar"
+    },
+    {
       "slug": "monaco",
       "name": "Monaco",
       "lat": 43.7384,
@@ -4043,6 +4465,9 @@
             },
             {
               "src": "/photos/mumbai/2025/02.png"
+            },
+            {
+              "src": "/photos/mumbai/2025/03.jpg"
             }
           ]
         }
@@ -4196,6 +4621,28 @@
       "countryCode": "gb"
     },
     {
+      "slug": "network-state",
+      "name": "Network State",
+      "lat": 9.3926,
+      "lng": 28.821,
+      "years": [
+        {
+          "year": 2025,
+          "photos": [
+            {
+              "src": "/photos/network-state/2025/01.jpg"
+            },
+            {
+              "src": "/photos/network-state/2025/02.jpg"
+            },
+            {
+              "src": "/photos/network-state/2025/03.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "slug": "new-orleans",
       "name": "New Orleans",
       "lat": 29.9511,
@@ -4347,6 +4794,9 @@
           "photos": [
             {
               "src": "/photos/ojeda/2025/01.jpg"
+            },
+            {
+              "src": "/photos/ojeda/2025/02.jpg"
             }
           ]
         }
@@ -4732,6 +5182,23 @@
       "countryCode": "us"
     },
     {
+      "slug": "portland-or",
+      "name": "Portland OR",
+      "lat": 45.5202,
+      "lng": -122.6742,
+      "years": [
+        {
+          "year": 2025,
+          "photos": [
+            {
+              "src": "/photos/portland-or/2025/01.jpg"
+            }
+          ]
+        }
+      ],
+      "countryCode": "us"
+    },
+    {
       "slug": "portland-oregon",
       "name": "Portland OR",
       "lat": 45.5152,
@@ -4779,6 +5246,33 @@
           "photos": [
             {
               "src": "/photos/prague/2025/01.jpg"
+            },
+            {
+              "src": "/photos/prague/2025/02.jpg"
+            },
+            {
+              "src": "/photos/prague/2025/03.jpg"
+            },
+            {
+              "src": "/photos/prague/2025/04.jpg"
+            },
+            {
+              "src": "/photos/prague/2025/05.jpg"
+            },
+            {
+              "src": "/photos/prague/2025/06.jpg"
+            },
+            {
+              "src": "/photos/prague/2025/07.jpg"
+            },
+            {
+              "src": "/photos/prague/2025/08.jpg"
+            },
+            {
+              "src": "/photos/prague/2025/09.jpg"
+            },
+            {
+              "src": "/photos/prague/2025/10.jpg"
             }
           ]
         }
@@ -4819,6 +5313,12 @@
             },
             {
               "src": "/photos/puebla/2025/02.jpg"
+            },
+            {
+              "src": "/photos/puebla/2025/03.jpg"
+            },
+            {
+              "src": "/photos/puebla/2025/04.jpg"
             }
           ]
         }
@@ -5128,6 +5628,9 @@
           "photos": [
             {
               "src": "/photos/san-carlos/2025/01.jpg"
+            },
+            {
+              "src": "/photos/san-carlos/2025/02.jpg"
             }
           ]
         }
@@ -5288,6 +5791,12 @@
             },
             {
               "src": "/photos/santiago/2025/02.jpg"
+            },
+            {
+              "src": "/photos/santiago/2025/03.jpg"
+            },
+            {
+              "src": "/photos/santiago/2025/04.jpg"
             }
           ]
         }
@@ -5653,6 +6162,41 @@
       "countryCode": "jp"
     },
     {
+      "slug": "tomas-morato",
+      "name": "Tomas Morato",
+      "lat": 14.6287,
+      "lng": 121.0344,
+      "years": [
+        {
+          "year": 2025,
+          "photos": [
+            {
+              "src": "/photos/tomas-morato/2025/01.jpg"
+            },
+            {
+              "src": "/photos/tomas-morato/2025/02.jpg"
+            },
+            {
+              "src": "/photos/tomas-morato/2025/03.jpg"
+            },
+            {
+              "src": "/photos/tomas-morato/2025/04.jpg"
+            },
+            {
+              "src": "/photos/tomas-morato/2025/05.jpg"
+            },
+            {
+              "src": "/photos/tomas-morato/2025/06.jpg"
+            },
+            {
+              "src": "/photos/tomas-morato/2025/07.jpg"
+            }
+          ]
+        }
+      ],
+      "countryCode": "ph"
+    },
+    {
       "slug": "toronto",
       "name": "Toronto",
       "lat": 43.6532,
@@ -5688,6 +6232,23 @@
         }
       ],
       "countryCode": "pe"
+    },
+    {
+      "slug": "tucumcari",
+      "name": "Tucumcari",
+      "lat": 35.1719,
+      "lng": -103.725,
+      "years": [
+        {
+          "year": 2025,
+          "photos": [
+            {
+              "src": "/photos/tucumcari/2025/01.jpg"
+            }
+          ]
+        }
+      ],
+      "countryCode": "us"
     },
     {
       "slug": "ulaanbaatar",
@@ -5730,6 +6291,23 @@
       "countryCode": "in"
     },
     {
+      "slug": "valencia",
+      "name": "Valencia",
+      "lat": 39.4697,
+      "lng": -0.3763,
+      "years": [
+        {
+          "year": 2025,
+          "photos": [
+            {
+              "src": "/photos/valencia/2025/01.jpg"
+            }
+          ]
+        }
+      ],
+      "countryCode": "es"
+    },
+    {
       "slug": "valencia-spain",
       "name": "Valencia",
       "lat": 39.4699,
@@ -5745,6 +6323,23 @@
         }
       ],
       "countryCode": "es"
+    },
+    {
+      "slug": "valencia-ve",
+      "name": "Valencia",
+      "lat": 10.17,
+      "lng": -68.0004,
+      "years": [
+        {
+          "year": 2025,
+          "photos": [
+            {
+              "src": "/photos/valencia-ve/2025/01.jpg"
+            }
+          ]
+        }
+      ],
+      "countryCode": "ve"
     },
     {
       "slug": "valencia-venezuela",
@@ -6054,6 +6649,62 @@
         }
       ],
       "countryCode": "hr"
+    },
+    {
+      "slug": "zug",
+      "name": "Zug",
+      "lat": 47.1486,
+      "lng": 8.5539,
+      "years": [
+        {
+          "year": 2025,
+          "photos": [
+            {
+              "src": "/photos/zug/2025/01.png"
+            },
+            {
+              "src": "/photos/zug/2025/02.png"
+            },
+            {
+              "src": "/photos/zug/2025/03.png"
+            },
+            {
+              "src": "/photos/zug/2025/04.png"
+            },
+            {
+              "src": "/photos/zug/2025/05.png"
+            },
+            {
+              "src": "/photos/zug/2025/06.png"
+            },
+            {
+              "src": "/photos/zug/2025/07.png"
+            },
+            {
+              "src": "/photos/zug/2025/08.png"
+            },
+            {
+              "src": "/photos/zug/2025/09.png"
+            },
+            {
+              "src": "/photos/zug/2025/10.png"
+            },
+            {
+              "src": "/photos/zug/2025/11.png"
+            },
+            {
+              "src": "/photos/zug/2025/12.png"
+            },
+            {
+              "src": "/photos/zug/2025/13.png"
+            },
+            {
+              "src": "/photos/zug/2025/14.png"
+            }
+          ]
+        }
+      ],
+      "countryCode": "ch"
     }
   ],
   "uncategorized": [
