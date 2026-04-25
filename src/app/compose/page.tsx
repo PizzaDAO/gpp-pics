@@ -28,6 +28,22 @@ function daysUntilGPP(): number {
   return Math.max(0, Math.ceil(diff / (1000 * 60 * 60 * 24)));
 }
 
+/** Read the set of posted city slugs from localStorage. */
+function getPostedCities(): Set<string> {
+  try {
+    const raw = localStorage.getItem("postedCities");
+    if (raw) return new Set(JSON.parse(raw));
+  } catch {}
+  return new Set();
+}
+
+/** Persist the posted city slugs set to localStorage. */
+function savePostedCities(set: Set<string>) {
+  try {
+    localStorage.setItem("postedCities", JSON.stringify([...set]));
+  } catch {}
+}
+
 // ---------------------------------------------------------------------------
 // Types derived from photos.json
 // ---------------------------------------------------------------------------
@@ -70,6 +86,7 @@ function ComposeContent() {
   const [copied, setCopied] = useState(false);
   const [selectedPhoto, setSelectedPhoto] = useState<string | null>(null);
   const [galleryOpen, setGalleryOpen] = useState(false);
+  const [postedCities, setPostedCities] = useState<Set<string>>(new Set());
 
   const dropdownRef = useRef<HTMLDivElement>(null);
   const days = useMemo(() => daysUntilGPP(), []);
@@ -86,6 +103,11 @@ function ComposeContent() {
     }
     // Only run on mount
     // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // Hydrate posted cities from localStorage
+  useEffect(() => {
+    setPostedCities(getPostedCities());
   }, []);
 
   // Close dropdown on outside click
@@ -114,6 +136,8 @@ function ComposeContent() {
     ? COUNTRY_NAMES[selectedCity.countryCode] || selectedCity.countryCode.toUpperCase()
     : "";
 
+  const isCityPosted = selectedCity ? postedCities.has(selectedCity.slug) : false;
+
   const allPhotos = useMemo(() => {
     if (!selectedCity) return [];
     return selectedCity.years.flatMap((y) => y.photos);
@@ -137,6 +161,18 @@ function ComposeContent() {
   }, [days, selectedCity, countryName, host]);
 
   // --- handlers -------------------------------------------------------------
+  function togglePosted() {
+    if (!selectedCity) return;
+    const next = new Set(postedCities);
+    if (next.has(selectedCity.slug)) {
+      next.delete(selectedCity.slug);
+    } else {
+      next.add(selectedCity.slug);
+    }
+    setPostedCities(next);
+    savePostedCities(next);
+  }
+
   function selectCity(city: City) {
     setSelectedCity(city);
     setSearch(city.name);
@@ -202,6 +238,12 @@ function ComposeContent() {
         </p>
       </header>
 
+      <div className="text-center mb-2">
+        <span className="text-sm text-text-secondary">
+          {postedCities.size} / {sortedCities.length} cities posted
+        </span>
+      </div>
+
       <div className="max-w-2xl mx-auto px-4 pb-16 space-y-8">
         {/* ---- City selector ---- */}
         <section>
@@ -237,6 +279,9 @@ function ComposeContent() {
                         style={{ display: "inline-block", width: "1.2em", height: "0.9em" }}
                       />
                       <span className="text-text-primary">{city.name}</span>
+                      {postedCities.has(city.slug) && (
+                        <span className="text-green-400 text-xs">✓</span>
+                      )}
                       <span className="ml-auto text-xs text-text-secondary">
                         {COUNTRY_NAMES[city.countryCode] || city.countryCode.toUpperCase()}
                       </span>
@@ -255,6 +300,19 @@ function ComposeContent() {
             <p className="mt-1 text-sm text-text-secondary">
               {emojiFlag(selectedCity.countryCode)} {selectedCity.name}, {countryName}
             </p>
+          )}
+          {selectedCity && (
+            <button
+              type="button"
+              onClick={togglePosted}
+              className={`mt-2 rounded-lg px-4 py-2 text-sm font-medium transition-colors ${
+                isCityPosted
+                  ? "bg-green-600 text-white hover:bg-green-700"
+                  : "border border-pizza-yellow text-pizza-yellow hover:bg-pizza-yellow/10"
+              }`}
+            >
+              {isCityPosted ? "✓ Posted" : "Mark as Posted"}
+            </button>
           )}
         </section>
 
