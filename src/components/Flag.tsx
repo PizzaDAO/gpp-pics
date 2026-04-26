@@ -1,8 +1,10 @@
 export const COUNTRY_NAMES: Record<string, string> = {
-  ae: "United Arab Emirates", af: "Afghanistan", al: "Albania", am: "Armenia",
+  ae: "United Arab Emirates", af: "Afghanistan", ag: "Antigua and Barbuda",
+  al: "Albania", am: "Armenia",
   ar: "Argentina", at: "Austria", au: "Australia", be: "Belgium",
   bf: "Burkina Faso", bg: "Bulgaria", bj: "Benin", bo: "Bolivia",
   br: "Brazil", bw: "Botswana", bz: "Belize", ca: "Canada",
+  ch: "Switzerland",
   ci: "Ivory Coast", cl: "Chile", cn: "China", co: "Colombia",
   cr: "Costa Rica", cy: "Cyprus", cz: "Czechia", de: "Germany",
   dk: "Denmark", ec: "Ecuador", ee: "Estonia", eg: "Egypt", es: "Spain",
