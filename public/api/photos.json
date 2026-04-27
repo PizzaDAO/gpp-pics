@@ -1625,9 +1625,6 @@
               "src": "/photos/cochabamba/2025/03.jpg"
             },
             {
-              "src": "/photos/cochabamba/2025/04.jpg"
-            },
-            {
               "src": "/photos/cochabamba/2025/05.jpg"
             },
             {
@@ -1761,9 +1758,6 @@
             },
             {
               "src": "/photos/culiacan/2025/02.jpeg"
-            },
-            {
-              "src": "/photos/culiacan/2025/03.jpg"
             }
           ]
         }
@@ -2096,80 +2090,6 @@
         }
       ],
       "countryCode": "ug"
-    },
-    {
-      "slug": "entre-rios",
-      "name": "Entre Rios",
-      "lat": -31.7413,
-      "lng": -60.5107,
-      "years": [
-        {
-          "year": 2025,
-          "photos": [
-            {
-              "src": "/photos/entre-rios/2025/01.jpg"
-            },
-            {
-              "src": "/photos/entre-rios/2025/02.jpg"
-            },
-            {
-              "src": "/photos/entre-rios/2025/03.jpg"
-            },
-            {
-              "src": "/photos/entre-rios/2025/04.jpg"
-            },
-            {
-              "src": "/photos/entre-rios/2025/05.jpg"
-            },
-            {
-              "src": "/photos/entre-rios/2025/06.jpg"
-            },
-            {
-              "src": "/photos/entre-rios/2025/07.jpg"
-            },
-            {
-              "src": "/photos/entre-rios/2025/08.jpg"
-            },
-            {
-              "src": "/photos/entre-rios/2025/09.jpg"
-            },
-            {
-              "src": "/photos/entre-rios/2025/10.png"
-            },
-            {
-              "src": "/photos/entre-rios/2025/11.png"
-            },
-            {
-              "src": "/photos/entre-rios/2025/12.png"
-            },
-            {
-              "src": "/photos/entre-rios/2025/13.png"
-            },
-            {
-              "src": "/photos/entre-rios/2025/14.png"
-            },
-            {
-              "src": "/photos/entre-rios/2025/15.png"
-            },
-            {
-              "src": "/photos/entre-rios/2025/16.png"
-            },
-            {
-              "src": "/photos/entre-rios/2025/17.png"
-            },
-            {
-              "src": "/photos/entre-rios/2025/18.png"
-            },
-            {
-              "src": "/photos/entre-rios/2025/19.png"
-            },
-            {
-              "src": "/photos/entre-rios/2025/20.png"
-            }
-          ]
-        }
-      ],
-      "countryCode": "ar"
     },
     {
       "slug": "enugu",
@@ -2542,6 +2462,42 @@
             },
             {
               "src": "/photos/gualeguaychu/2025/19.jpg"
+            },
+            {
+              "src": "/photos/gualeguaychu/2025/20.jpg"
+            },
+            {
+              "src": "/photos/gualeguaychu/2025/21.png"
+            },
+            {
+              "src": "/photos/gualeguaychu/2025/22.png"
+            },
+            {
+              "src": "/photos/gualeguaychu/2025/23.png"
+            },
+            {
+              "src": "/photos/gualeguaychu/2025/24.png"
+            },
+            {
+              "src": "/photos/gualeguaychu/2025/25.png"
+            },
+            {
+              "src": "/photos/gualeguaychu/2025/26.png"
+            },
+            {
+              "src": "/photos/gualeguaychu/2025/27.png"
+            },
+            {
+              "src": "/photos/gualeguaychu/2025/28.png"
+            },
+            {
+              "src": "/photos/gualeguaychu/2025/29.png"
+            },
+            {
+              "src": "/photos/gualeguaychu/2025/30.png"
+            },
+            {
+              "src": "/photos/gualeguaychu/2025/31.png"
             }
           ]
         }
@@ -2979,35 +2935,6 @@
         }
       ],
       "countryCode": "in"
-    },
-    {
-      "slug": "hyuancao",
-      "name": "Hyuancao",
-      "lat": 0.0,
-      "lng": 0.0,
-      "years": [
-        {
-          "year": 2025,
-          "photos": [
-            {
-              "src": "/photos/hyuancao/2025/01.jpg"
-            },
-            {
-              "src": "/photos/hyuancao/2025/02.jpg"
-            },
-            {
-              "src": "/photos/hyuancao/2025/03.jpg"
-            },
-            {
-              "src": "/photos/hyuancao/2025/04.jpg"
-            },
-            {
-              "src": "/photos/hyuancao/2025/05.jpg"
-            }
-          ]
-        }
-      ],
-      "countryCode": "vn"
     },
     {
       "slug": "ibadan",
@@ -4465,9 +4392,6 @@
             },
             {
               "src": "/photos/mumbai/2025/02.png"
-            },
-            {
-              "src": "/photos/mumbai/2025/03.jpg"
             }
           ]
         }
@@ -5199,23 +5123,6 @@
       "countryCode": "us"
     },
     {
-      "slug": "portland-oregon",
-      "name": "Portland OR",
-      "lat": 45.5152,
-      "lng": -122.6784,
-      "years": [
-        {
-          "year": 2025,
-          "photos": [
-            {
-              "src": "/photos/portland-oregon/2025/01.jpg"
-            }
-          ]
-        }
-      ],
-      "countryCode": "us"
-    },
-    {
       "slug": "portoviejo",
       "name": "Portoviejo",
       "lat": -1.0547,
@@ -5316,9 +5223,6 @@
             },
             {
               "src": "/photos/puebla/2025/03.jpg"
-            },
-            {
-              "src": "/photos/puebla/2025/04.jpg"
             }
           ]
         }
@@ -5794,9 +5698,6 @@
             },
             {
               "src": "/photos/santiago/2025/03.jpg"
-            },
-            {
-              "src": "/photos/santiago/2025/04.jpg"
             }
           ]
         }
@@ -6308,23 +6209,6 @@
       "countryCode": "es"
     },
     {
-      "slug": "valencia-spain",
-      "name": "Valencia",
-      "lat": 39.4699,
-      "lng": -0.3763,
-      "years": [
-        {
-          "year": 2025,
-          "photos": [
-            {
-              "src": "/photos/valencia-spain/2025/01.jpg"
-            }
-          ]
-        }
-      ],
-      "countryCode": "es"
-    },
-    {
       "slug": "valencia-ve",
       "name": "Valencia",
       "lat": 10.17,
@@ -6335,23 +6219,6 @@
           "photos": [
             {
               "src": "/photos/valencia-ve/2025/01.jpg"
-            }
-          ]
-        }
-      ],
-      "countryCode": "ve"
-    },
-    {
-      "slug": "valencia-venezuela",
-      "name": "Valencia Venezuela",
-      "lat": 10.162,
-      "lng": -68.0077,
-      "years": [
-        {
-          "year": 2025,
-          "photos": [
-            {
-              "src": "/photos/valencia-venezuela/2025/01.jpg"
             }
           ]
         }
@@ -6708,48 +6575,6 @@
     }
   ],
   "uncategorized": [
-    {
-      "slug": "africa",
-      "name": "Africa",
-      "photos": [
-        {
-          "src": "/photos/africa/2025/01.jpeg",
-          "year": 2025
-        }
-      ],
-      "countryCode": "",
-      "years": [
-        {
-          "year": 2025,
-          "photos": [
-            {
-              "src": "/photos/africa/2025/01.jpeg"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "slug": "beeple",
-      "name": "Beeple",
-      "photos": [
-        {
-          "src": "/photos/beeple/2025/01.jpeg",
-          "year": 2025
-        }
-      ],
-      "countryCode": "",
-      "years": [
-        {
-          "year": 2025,
-          "photos": [
-            {
-              "src": "/photos/beeple/2025/01.jpeg"
-            }
-          ]
-        }
-      ]
-    },
     {
       "slug": "caribbean-region",
       "name": "Caribbean Region",
