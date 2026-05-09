@@ -147,7 +147,7 @@ function ComposeContent() {
   useEffect(() => {
     if (!selectedCity) {
       setTweetText(
-        `🗺️🍕🥳\n${days} days until the Global Pizza Party on Friday, May 22!`
+        `🗺️🍕🥳\n${days} days until Bitcoin Pizza Day! Find your local event at globalpizza.party 🔍`
       );
       return;
     }
@@ -156,7 +156,7 @@ function ComposeContent() {
     const handle = host ? `@${host}` : "@handle";
 
     setTweetText(
-      `🗺️🍕🥳\n${days} days until the Global Pizza Party on Friday, May 22!\n\n${flag} Last year's party in ${selectedCity.name}, ${countryName}. Hosted by ${handle}:`
+      `🗺️🍕🥳\n${days} days until Bitcoin Pizza Day! Find your local event at globalpizza.party 🔍\n\n${flag} Last year's party in ${selectedCity.name}. Hosted by ${handle}:`
     );
   }, [days, selectedCity, countryName, host]);
 
@@ -234,7 +234,7 @@ function ComposeContent() {
           <span className="text-pizza-yellow">Compose</span> a Tweet
         </h1>
         <p className="mt-2 text-text-secondary text-lg">
-          {days} days until the Global Pizza Party on Friday, May 22!
+          {days} days until Bitcoin Pizza Day!
         </p>
       </header>
 
