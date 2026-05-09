@@ -17,9 +17,11 @@ export const COUNTRY_NAMES: Record<string, string> = {
   my: "Malaysia", na: "Namibia", ne: "Niger", ng: "Nigeria",
   nl: "Netherlands", no: "Norway", pe: "Peru", pf: "French Polynesia",
   ph: "Philippines", pk: "Pakistan", pl: "Poland", pr: "Puerto Rico",
-  pt: "Portugal", qa: "Qatar", ro: "Romania", ru: "Russia", se: "Sweden",
+  pt: "Portugal", qa: "Qatar", ro: "Romania", ru: "Russia", rw: "Rwanda",
+  se: "Sweden",
   sg: "Singapore", sk: "Slovakia", sv: "El Salvador", tg: "Togo",
-  th: "Thailand", tr: "Turkey", tw: "Taiwan", tz: "Tanzania", ua: "Ukraine",
+  th: "Thailand", tn: "Tunisia", tr: "Turkey", tw: "Taiwan", tz: "Tanzania",
+  ua: "Ukraine",
   ug: "Uganda", us: "United States", ve: "Venezuela", vn: "Vietnam",
   za: "South Africa", zw: "Zimbabwe",
 };
